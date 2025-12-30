@@ -45,7 +45,7 @@ export default function Home() {
             href="/found"
             className="rounded-full border border-black px-8 py-3 transition hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black"
           >
-            Browse Found Items
+            Browse Found Items (Updated)
           </a>
         </div>
       </main>
