@@ -28,11 +28,11 @@ Follow these steps carefully 👇
 
 ---
 
-## 1️⃣ Fork the Repository (YOU DON'T TO FORK IF I HAVE ADDED YOU ON PROJECT)
+## 1️⃣ Fork the Repository (YOU DON'T NEED TO FORK IF I HAVE ADDED YOU ON PROJECT)
 
 1. Click the **Fork** button (top-right of this page)
 2. This creates your own copy of the project under your GitHub account
-3. [SKIP THIS FORK STEP] IF YOU ARE A MEMBER OR I HAVE ADDED YOU THE PROJECT
+3. [SKIP THIS FORK STEP] IF YOU ARE A MEMBER OR I HAVE ADDED YOU ON THE PROJECT
 
 ---
 
