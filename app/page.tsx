@@ -1,3 +1,5 @@
+import { Heading } from "@/components/own_components/full_components/header";
+import { NavLink } from "@/components/own_components/heading_links";
 import { Logo } from "@/components/own_components/logo";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -10,32 +12,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white">
       {/* Header */}
-      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-    <Logo sizes="4xl"/>
-        <nav  className="hidden  gap-6 text-sm text-zinc-600 dark:text-zinc-400 sm:flex">
-          <Button variant={"ghost"}>
-            How it works
-
-          </Button>
-          <Button variant={"ghost"}>
-            Report item
-
-          </Button>
-          <Button variant={"ghost"}>
-            Browse
-
-          </Button>
-
-
-          {/* <a href="#how" className="hover:text-black dark:hover:text-white">
-          </a> */}
-          {/* <a href="#report" className="hover:text-black dark:hover:text-white">
-          </a>
-          <a href="#browse" className="hover:text-black dark:hover:text-white">
-          </a> */}
-        </nav>
-      </header>
-
+      <Heading/>
       {/* Hero Section */}
       <main className="mx-auto flex max-w-6xl flex-col items-center px-6 py-32 text-center">
         <h2 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
