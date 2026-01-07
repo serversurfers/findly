@@ -22,7 +22,7 @@ const ActualValues:Record<Params["sizes"],string>={
 export function Logo({sizes}:Params){
     return(
         <>
-            <span className={`${ActualValues[sizes]} ${montserrat.className} font-bold`}>findly <span style={{'color':'#00B351'}}>.</span></span>
+            <span className={`${ActualValues[sizes]} ${montserrat.className} font-bold`}>findly<span style={{'color':'#00B351'}}>.</span></span>
         </>
     )
 }
