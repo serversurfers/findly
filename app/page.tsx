@@ -34,11 +34,6 @@ export default function Home() {
           </span>
         </h2>
 
-        <p className="mt-6 max-w-xl text-lg text-white">
-          Findly is a university-focused lost and found platform that helps
-          students and staff report, search, and recover lost items easily.
-        </p>
-
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           {/* <a
             href="/lost"
