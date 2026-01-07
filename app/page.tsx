@@ -11,7 +11,7 @@ export default function Home() {
     <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white">
       {/* Header */}
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-    <Logo size="4xl"/>
+    <Logo sizes="4xl"/>
         <nav  className="hidden  gap-6 text-sm text-zinc-600 dark:text-zinc-400 sm:flex">
           <Button variant={"ghost"}>
             How it works
