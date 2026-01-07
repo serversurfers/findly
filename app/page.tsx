@@ -1,3 +1,4 @@
+import { Logo } from "@/components/own_components/logo";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -10,8 +11,8 @@ export default function Home() {
     <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white">
       {/* Header */}
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <h1 className="text-xl font-semibold tracking-tight">Findly</h1>
-        <nav className="hidden gap-6 text-sm text-zinc-600 dark:text-zinc-400 sm:flex">
+    <Logo sizes="4xl"/>
+        <nav  className="hidden  gap-6 text-sm text-zinc-600 dark:text-zinc-400 sm:flex">
           <Button variant={"ghost"}>
             How it works
 
