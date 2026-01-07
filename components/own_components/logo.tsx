@@ -1,7 +1,7 @@
 "use client"
 
 type Params={
-    size:"sm"|"lg"|"xl"|"2xl"|"3xl"|"4xl",
+    sizes:"sm"|"lg"|"xl"|"2xl"|"3xl"|"4xl",
 }
 
 const ActualValues:Record<Params["size"],string>={
@@ -13,10 +13,10 @@ const ActualValues:Record<Params["size"],string>={
     "4xl":"text-3xl",
 }
 
-export function Logo({size}:Params){
+export function Logo({sizes}:Params){
     return(
         <>
-            <span className={`${ActualValues[size]} font-bold`}>Logo</span>
+            <span className={`${ActualValues[sizes]} font-bold`}>Logo</span>
         </>
     )
 }
