@@ -12,15 +12,26 @@ export default function Home() {
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
         <h1 className="text-xl font-semibold tracking-tight">Findly</h1>
         <nav className="hidden gap-6 text-sm text-zinc-600 dark:text-zinc-400 sm:flex">
-          <a href="#how" className="hover:text-black dark:hover:text-white">
+          <Button variant={"ghost"}>
             How it works
-          </a>
-          <a href="#report" className="hover:text-black dark:hover:text-white">
+
+          </Button>
+          <Button variant={"ghost"}>
             Report item
+
+          </Button>
+          <Button variant={"ghost"}>
+            Browse
+
+          </Button>
+
+
+          {/* <a href="#how" className="hover:text-black dark:hover:text-white">
+          </a> */}
+          {/* <a href="#report" className="hover:text-black dark:hover:text-white">
           </a>
           <a href="#browse" className="hover:text-black dark:hover:text-white">
-            Browse
-          </a>
+          </a> */}
         </nav>
       </header>
 
