@@ -3,6 +3,16 @@ import { Button } from "@/components/ui/button";
 import { NavLink } from "../heading_links";
 import { Logo } from "../logo";
 import { SearchC } from "../searchComponent";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { DialogDemo } from "../dialogue/loginAndSignup";
+import { SignupDemo } from "../dialogue/signup";
 type data={
     text:'home'|'about'|'contact'|'home'|'other links',
 }
@@ -35,8 +45,8 @@ console.log(links);
       </div>
       <div className="flex gap-[10px]">
         <SearchC/>
-        <Button variant={'ghost'} className="mt-1">login</Button>
-        <Button variant={'default'}  className="mt-1">signup</Button>
+        <DialogDemo/>
+        <SignupDemo/>
       </div>
     </div>
   );
