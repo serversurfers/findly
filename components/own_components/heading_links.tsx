@@ -25,6 +25,6 @@ const ValuesLinks:Record<data['text'], string>={
 export function NavLink({text}:data){
     console.log(text)
     return(<>
-        <Link href={ValuesLinks[text]}><Button variant={"ghost"} className="button">{text}</Button></Link>
+        <Link href={ValuesLinks[text]} className="w-full text-right"><Button variant={"ghost"} className="button w-full text-right ">{text}</Button></Link>
     </>)
 }
