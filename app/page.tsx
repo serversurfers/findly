@@ -1,6 +1,6 @@
-import { Heading } from "@/components/own_components/full_components/header";
-import { NavLink } from "@/components/own_components/heading_links";
-import { Logo } from "@/components/own_components/logo";
+import { Heading } from "@/components/custom/header";
+import { NavLink } from "@/components/custom/heading_links";
+import { Logo } from "@/components/custom/logo";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
