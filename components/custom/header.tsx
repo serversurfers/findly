@@ -1,10 +1,10 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { NavLink } from "../heading_links";
-import { Logo } from "../logo";
-import { SearchC } from "../searchComponent";
-import { DialogDemo } from "../dialogue/loginAndSignup";
-import { SignupDemo } from "../dialogue/signup";
+import { NavLink } from "./heading_links";
+import { Logo } from "./logo";
+import { SearchC } from "./searchComponent";
+import { DialogDemo } from "./dialogue/loginAndSignup";
+import { SignupDemo } from "./dialogue/signup";
 import { useState } from "react";
 
 export function Heading() {
