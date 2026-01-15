@@ -51,7 +51,7 @@ export function Heading() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full lg:w-1/2 lg:flex-row gap-[10px]">
+      <div className="flex flex-col  w-full lg:w-1/2 lg:flex-row gap-2.5">
         <SearchC />
         <DialogDemo />
         <SignupDemo />

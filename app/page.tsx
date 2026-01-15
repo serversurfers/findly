@@ -1,12 +1,11 @@
 import { Heading } from "@/components/custom/header";
-import { NavLink } from "@/components/custom/heading_links";
-import { Logo } from "@/components/custom/logo";
+// import { NavLink } from "@/components/custom/heading_links"
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   return (
@@ -42,7 +41,7 @@ export default function Home() {
         <DialogTrigger asChild>
           <Button variant="outline" size={'lg'} className="py-6">Open Dialog</Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-106.25">
           <DialogHeader>
             <DialogTitle>Edit profile</DialogTitle>
             <DialogDescription>
