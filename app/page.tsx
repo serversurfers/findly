@@ -1,6 +1,4 @@
-import { Heading } from "@/components/custom/header";
-import { NavLink } from "@/components/custom/heading_links";
-import { Logo } from "@/components/custom/logo";
+import Heading from "@/components/custom/header";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
