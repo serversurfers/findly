@@ -1,23 +1,15 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { NavLink } from "./heading_links";
-import { Logo } from "./logo";
-import { SearchC } from "./searchComponent";
+import NavLink from "./NavLink";
+import Search from "./searchComponent";
 import { DialogDemo } from "./dialogue/loginAndSignup";
 import { SignupDemo } from "./dialogue/signup";
 import { useState } from "react";
+import { links } from "@/constants";
+import Logo from "./logo";
 
-export function Heading() {
-  const links = {
-    home1: "/home",
-    home2: "/home",
-    home3: "/home",
-    home4: "/home",
-    home5: "/home5",
-  };
-
+const Heading = () => {
   const [open, setOpen] = useState<boolean>(false);
-
+  //TODO: RESPONSIVENESS
   return (
     <header
       className={`
@@ -31,31 +23,29 @@ export function Heading() {
       <div className="flex flex-col w-full lg:flex-row gap-[10px] pt-2">
         <div className="lg:flex ">
           <div className="flex justify-between items-center w-full">
-          <Logo sizes="4xl" />
-          <button
-            onClick={() => setOpen(prev => !prev)}
-            className="lg:hidden text-xl font-bold"
-            aria-label="Toggle menu"
-          >
-            {open ? "x" : "☰"}
-          </button>
-        </div>
+            <Logo sizes="2xl" />
+            <button
+              onClick={() => setOpen((prev) => !prev)}
+              className="lg:hidden text-xl font-bold"
+              aria-label="Toggle menu"
+            >
+              {open ? "x" : "☰"}
+            </button>
+          </div>
 
-        <ul className="flex flex-col lg:flex-row gap-4 mt-1.5">
-          {Object.entries(links).map(([text, href]) => (
-            <li key={text} className="w-full">
-              <NavLink text={text} href={href} />
-            </li>
+          {links.map((item) => (
+            <NavLink href={item.href} label={item.label} />
           ))}
-        </ul>
         </div>
       </div>
 
       <div className="flex flex-col w-full lg:w-1/2 lg:flex-row gap-[10px]">
-        <SearchC />
+        <Search />
         <DialogDemo />
         <SignupDemo />
       </div>
     </header>
   );
-}
+};
+
+export default Heading;

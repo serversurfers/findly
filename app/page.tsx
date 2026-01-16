@@ -1,4 +1,4 @@
-import { Heading } from "@/components/custom/header";
+import Heading from "@/components/custom/header";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
