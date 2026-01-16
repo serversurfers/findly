@@ -21,7 +21,235 @@ This project is beginner-friendly and open-source. You can fork it, run it local
 - **Vercel** (deployment)
 
 ---
+📁 Project Conventions & Naming Guide
 
+(Next.js – Frontend & Backend)
+
+Goal: Make the codebase easy to read, easy to navigate, and hard to mess up, even for beginners.
+
+1️⃣ General Naming Rules (Applies Everywhere)
+✅ Use lowercase + kebab-case for folders
+auth-form
+user-profile
+learning-insights
+api-client
+
+
+❌ Avoid:
+
+AuthForm
+authForm
+auth_form
+
+✅ Use camelCase for variables & functions
+getUserProfile()
+isAuthenticated
+fetchLearningInsights
+
+✅ Use PascalCase for:
+
+React components
+
+Types & Interfaces
+
+Classes
+
+UserCard
+NavLink
+LearningInsight
+
+✅ File purpose should be obvious from the name
+
+Good:
+
+user-card.tsx
+login-form.tsx
+fetch-user.ts
+create-session.ts
+
+
+Bad:
+
+utils.ts
+helper.ts
+test.ts
+file1.ts
+
+2️⃣ Frontend (Next.js App Router)
+📂 Folder Structure (Recommended)
+app/
+├── (auth)/
+│   ├── login/
+│   │   └── page.tsx
+│   └── register/
+│       └── page.tsx
+│
+├── (dashboard)/
+│   ├── page.tsx
+│   └── settings/
+│       └── page.tsx
+│
+├── api/
+│   └── auth/
+│       └── route.ts
+│
+├── layout.tsx
+├── page.tsx
+└── globals.css
+
+🧠 Rules
+
+(auth) & (dashboard) are route groups (not part of URL)
+
+page.tsx = route
+
+layout.tsx = layout wrapper
+
+route.ts = backend API
+
+3️⃣ Components Convention
+components/
+├── ui/
+│   ├── button.tsx
+│   ├── input.tsx
+│   └── modal.tsx
+│
+├── navigation/
+│   ├── nav-bar.tsx
+│   └── nav-link.tsx
+│
+├── auth/
+│   ├── login-form.tsx
+│   └── register-form.tsx
+│
+└── shared/
+    ├── logo.tsx
+    └── empty-state.tsx
+
+Component file rules:
+
+One component per file
+
+File name matches component name (kebab-case)
+
+// nav-link.tsx
+export function NavLink() {}
+
+4️⃣ Backend (Next.js API Routes)
+📂 API Structure
+app/api/
+├── auth/
+│   ├── login/
+│   │   └── route.ts
+│   ├── logout/
+│   │   └── route.ts
+│   └── register/
+│       └── route.ts
+│
+├── users/
+│   └── route.ts
+│
+└── learning-insights/
+    └── route.ts
+
+HTTP method clarity
+export async function GET() {}
+export async function POST() {}
+export async function DELETE() {}
+
+5️⃣ Business Logic (Backend & Shared)
+lib/
+├── auth/
+│   ├── create-session.ts
+│   ├── verify-session.ts
+│   └── hash-password.ts
+│
+├── users/
+│   ├── get-user.ts
+│   └── update-user.ts
+│
+└── learning-insights/
+    ├── generate-insights.ts
+    └── fetch-insights.ts
+
+Rule:
+
+Routes should be thin. Logic lives in lib/.
+
+6️⃣ Types & Interfaces
+types/
+├── user.ts
+├── session.ts
+├── learning-insight.ts
+└── api-response.ts
+
+// types/user.ts
+export interface User {
+  id: string;
+  email: string;
+  createdAt: string;
+}
+
+7️⃣ Hooks Convention
+hooks/
+├── use-auth.ts
+├── use-user.ts
+└── use-learning-insights.ts
+
+
+Rules:
+
+Must start with use
+
+One hook per file
+
+8️⃣ Utility & Helpers
+utils/
+├── cn.ts            // className helper
+├── format-date.ts
+├── api-client.ts
+
+
+Avoid dumping everything in one file.
+
+9️⃣ Environment & Config
+config/
+├── site.ts
+├── auth.ts
+└── routes.ts
+
+// config/routes.ts
+export const ROUTES = {
+  LOGIN: "/login",
+  DASHBOARD: "/dashboard",
+};
+
+🔟 Git & PR Conventions (Beginner Friendly)
+Branch names
+feature/login-form
+fix/navbar-alignment
+chore/update-deps
+
+Commit messages
+feat: add login form
+fix: correct session validation
+refactor: simplify auth logic
+
+🧩 Beginner Golden Rules (Put this in bold)
+
+❗ Don’t create utils.ts
+
+❗ Don’t mix UI & business logic
+
+❗ Name files by what they do
+
+❗ If unsure, follow existing patterns
+
+✅ Small PRs > Big PRs
+
+✅ Ask before refactoring
+
+---
 ## 📦 Getting Started (Beginner Guide)
 
 Follow these steps carefully 👇
